@@ -1,0 +1,27 @@
+.footer {
+  background-color: #262626;
+}
+.footer .row .col a,
+p {
+  text-decoration: none;
+  color: #999999;
+  font-size: 13px;
+  display: block;
+}
+.footer .row .col a:hover {
+  color: orangered;
+}
+.container hr {
+  color: #ffffff;
+  text-align: center;
+  height: 2px;
+  margin: 30px 60px 30px 60px;
+}
+.footer .row .diff-anchor a {
+  color: white;
+  font-size: 13px;
+  display: block;
+}
+.footer .row .col .logo-anchors a {
+  display: inline;
+}

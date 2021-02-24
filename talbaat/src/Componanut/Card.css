@@ -1,0 +1,16 @@
+.card {
+  max-width: 300px;
+}
+
+.col-img img {
+  width: 100%;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-anchor {
+  color: orangered;
+  text-decoration: none;
+  cursor: pointer;
+}

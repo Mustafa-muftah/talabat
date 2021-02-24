@@ -1,0 +1,9 @@
+.DownloadButton img {
+  width: 15%;
+  cursor: pointer;
+}
+@media screen and (max-width: 415px) {
+  .DownloadButton img {
+    width: 50%;
+  }
+}

@@ -1,0 +1,19 @@
+#page-numbers li {
+  display: inline-block;
+  margin: 20px;
+}
+.Pagenation a {
+  color: orangered;
+}
+.Pagenation ul li {
+  color: black;
+  list-style: none;
+}
+#page-numbers li {
+  color: orangered;
+  list-style: none;
+  cursor: pointer;
+}
+#page-numbers li:active {
+  color: black;
+}

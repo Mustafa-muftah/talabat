@@ -1,0 +1,15 @@
+.login {
+  max-width: 600px;
+}
+.login-text {
+  color: orangered;
+  font-family: sans-serif;
+}
+.login label {
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.login input {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,128 @@
+{
+    "Restaruant" : [
+      { "id": "R-1", "name": "Ozone", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-2", "name": "Zawy", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-3", "name": "Oozy", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-4", "name": "Italiano", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-5", "name": "Roma", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-6", "name": "Shabrawy", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-7", "name": "Gad", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-8", "name": "Wings", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-9", "name": "Bahia", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-10", "name": "KFC", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-11", "name": "Mac", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-12", "name": "Momen", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-13", "name": "Zacks", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-14", "name": "Mana", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-15", "name": "Home", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-16", "name": "Dana", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-17", "name": "Gigi", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-18", "name": "Door", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-19", "name": "Hana", "cusisines": "italian", "area": "NasrCity" },
+      { "id": "R-20", "name": "Arabica", "cusisines": "italian", "area": "NasrCity" }
+    ],
+ 
+    "menus":[
+    
+      {
+        "id": "R-1",
+        "mainDishes": "fish Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 2,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 3,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 4,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 5,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 6,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 7,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 8,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 9,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 10,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 11,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 12,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 13,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 14,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 15,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 16,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 17,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 18,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 19,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      },
+      {
+        "id": 20,
+        "mainDishes": "Chicken Meat Fish",
+        "sideDishes": "salad Teheena"
+      }
+    ]
+}

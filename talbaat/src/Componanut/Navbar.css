@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+nav {
+  background-color: orangered;
+  display: flex;
+}
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  color: black;
+}
+.nav-btn {
+  border: 1px solid white;
+  color: white;
+  border-radius: 7px;
+}
+.nav-btn:hover {
+  background-color: tomato;
+  color: whitesmoke;
+}
