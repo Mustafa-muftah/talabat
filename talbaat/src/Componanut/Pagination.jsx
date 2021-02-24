@@ -7,6 +7,7 @@ class Pagination extends Component {
     currentPage: 1,
     RestaruantPerPage: 10,
     // totalCount:
+    //comment
   };
 
   handleClick = (event) => {
