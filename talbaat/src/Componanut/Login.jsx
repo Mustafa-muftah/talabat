@@ -9,6 +9,7 @@ class Login extends Component {
     username: "",
     password: "",
     errors: {},
+    //nothing
   };
 
   schema = {
