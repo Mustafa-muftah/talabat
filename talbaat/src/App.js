@@ -4,9 +4,11 @@ import axios from "axios";
 import Footer from "./Componanut/Footer";
 import Navbar from "./Componanut/Navbar";
 import Home from "./Componanut/Home";
-import Pagination from "./Componanut/Pagination";
+import RestaruantList from "./Componanut/RestaruantList";
 import Menus from "./Menus";
 import Login from "./Componanut/Login";
+import Search from "./Componanut/Search";
+import Pagination from "./Componanut/Pagination";
 class App extends Component {
   state = {
     resturant: [],
@@ -32,12 +34,13 @@ class App extends Component {
         <Switch>
           <Route path="/Home" component={Home}></Route>
           <Route path="/login" component={Login}></Route>
-          <Route
+          {/* <Route
             path="/Restraunat"
             render={(props) => (
-              <Pagination resturant={this.state.resturant} {...props} />
+              <RestaruantList resturant={this.state.resturant} {...props} />
             )}
-          ></Route>
+          ></Route> */}
+          <Route path="/Restraunat" component={Pagination}></Route>
           <Route
             path="/menus/:id"
             render={(props) =>
@@ -45,6 +48,10 @@ class App extends Component {
                 <Menus menus={this.state.menus} {...props} />
               )
             }
+          ></Route>
+          <Route
+            path="/search"
+            render={(props) => <Search {...props} />}
           ></Route>
           <Redirect from="/" to="/Home"></Redirect>
           <Redirect to="/Home"></Redirect>

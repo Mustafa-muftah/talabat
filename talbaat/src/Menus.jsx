@@ -6,10 +6,15 @@ class Menus extends Component {
   state = {
     menu: null,
   };
+  // getMenu = async () => {
+  //   const resId = window.location.pathname.split("/")[2]; //1- get last sigment of url
+  //   console.log(resId);
+  //   const { data } = await axios.get(`http://localhost:4000/menus/${resId}`);
+  //   this.setState({ menu: data });
+  // };
   getMenu = async () => {
-    const resId = window.location.pathname.split("/")[2]; //1- get last sigment of url
-    console.log(resId);
-    const { data } = await axios.get(`http://localhost:4000/menus/${resId}`);
+    const resId = this.props.location.pathname;
+    const { data } = await axios.get(`http://localhost:4000${resId}`);
     this.setState({ menu: data });
   };
   async componentDidMount() {

@@ -10,16 +10,26 @@
   margin: auto;
   padding: 200px 50px 200px 50px;
 }
-.search-area input {
+.search-area .input {
   border: 2px solid rgb(223, 211, 211);
   border-radius: 10px;
-  width: 40%;
+  width: 50%;
   padding: 15px 30px;
+  background-color: white;
+}
+input:active {
+  color: black;
+}
+
+.input label {
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 600px) {
-  .search-area input {
+  .search-area .input,
+  .input label {
     width: 100%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -33,4 +43,15 @@
     background-image: none;
     background-color: none;
   }
+}
+.search-button {
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 17px 30px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.search-button:hover {
+  color: black;
 }
