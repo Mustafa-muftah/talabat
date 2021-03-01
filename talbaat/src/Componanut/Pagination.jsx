@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Rstaruant from "./Restaruant";
 
-class Pagination extends Component {
+class RestPagination extends Component {
   state = {
     resturant: [],
     pageIndex: 1,
@@ -78,4 +78,4 @@ class Pagination extends Component {
   }
 }
 
-export default Pagination;
+export default RestPagination;

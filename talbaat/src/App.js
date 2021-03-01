@@ -8,7 +8,8 @@ import RestaruantList from "./Componanut/RestaruantList";
 import Menus from "./Menus";
 import Login from "./Componanut/Login";
 import Search from "./Componanut/Search";
-import Pagination from "./Componanut/Pagination";
+import RestPagination from "./Componanut/Pagination";
+
 class App extends Component {
   state = {
     resturant: [],
@@ -40,7 +41,7 @@ class App extends Component {
               <RestaruantList resturant={this.state.resturant} {...props} />
             )}
           ></Route> */}
-          <Route path="/Restraunat" component={Pagination}></Route>
+          <Route path="/Restraunat" component={RestPagination}></Route>
           <Route
             path="/menus/:id"
             render={(props) =>
