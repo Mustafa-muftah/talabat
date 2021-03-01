@@ -28,7 +28,7 @@ class RestPagination extends Component {
   handleDecrement = async (e) => {
     let index = this.state.pageIndex;
     let decrement = index - 1;
-    this.state.pageIndex > 0 && this.setState({ pageIndex: decrement });
+    this.state.pageIndex > 1 && this.setState({ pageIndex: decrement });
     await this.getResturatns();
     console.log(this.state.pageIndex);
   };

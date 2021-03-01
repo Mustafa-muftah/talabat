@@ -8,7 +8,7 @@ import RestaruantList from "./Componanut/RestaruantList";
 import Menus from "./Menus";
 import Login from "./Componanut/Login";
 import Search from "./Componanut/Search";
-import RestPagination from "./Componanut/Pagination";
+import RestPagination from "./Componanut/RestPagination";
 
 class App extends Component {
   state = {
