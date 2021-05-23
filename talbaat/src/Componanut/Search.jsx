@@ -13,7 +13,7 @@ class Search extends Component {
     restData: {},
   };
   getResturatns = async () => {
-    const { data } = await axios.get("http://localhost:4000/Restaruant");
+    const { data } = await axios.get("http://localhost:3005/Restaruant");
     this.setState({ resturant: data });
   };
   async componentDidMount() {

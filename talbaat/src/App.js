@@ -4,11 +4,12 @@ import axios from "axios";
 import Footer from "./Componanut/Footer";
 import Navbar from "./Componanut/Navbar";
 import Home from "./Componanut/Home";
-import RestaruantList from "./Componanut/RestaruantList";
-import Menus from "./Menus";
+import Menus from "./Componanut/Menus";
 import Login from "./Componanut/Login";
 import Search from "./Componanut/Search";
 import RestPagination from "./Componanut/RestPagination";
+import ShoppingCart from "./Componanut/ShoppingCart";
+import Cart from "./Componanut/Cart";
 
 class App extends Component {
   state = {
@@ -16,11 +17,11 @@ class App extends Component {
     menus: [],
   };
   getResturatns = async () => {
-    const { data } = await axios.get("http://localhost:4000/Restaruant");
+    const { data } = await axios.get("http://localhost:3005/Restaruant");
     this.setState({ resturant: data });
   };
   getMenus = async () => {
-    const { data } = await axios.get("http://localhost:4000/menus");
+    const { data } = await axios.get("http://localhost:3005/menus");
     this.setState({ menus: data });
   };
   async componentDidMount() {
@@ -35,13 +36,12 @@ class App extends Component {
         <Switch>
           <Route path="/Home" component={Home}></Route>
           <Route path="/login" component={Login}></Route>
-          {/* <Route
+
+          <Route
             path="/Restraunat"
-            render={(props) => (
-              <RestaruantList resturant={this.state.resturant} {...props} />
-            )}
-          ></Route> */}
-          <Route path="/Restraunat" component={RestPagination}></Route>
+            render={(props) => <RestPagination {...props} />}
+          ></Route>
+
           <Route
             path="/menus/:id"
             render={(props) =>
@@ -54,8 +54,14 @@ class App extends Component {
             path="/search"
             render={(props) => <Search {...props} />}
           ></Route>
-          <Redirect from="/" to="/Home"></Redirect>
-          <Redirect to="/Home"></Redirect>
+          <Route
+            path="/cart"
+            render={(props) => <ShoppingCart {...props} />}
+          ></Route>
+
+          <Route exact path="/">
+            <Redirect to="/Home"></Redirect>
+          </Route>
         </Switch>
 
         <Footer />
