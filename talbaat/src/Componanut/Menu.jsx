@@ -23,29 +23,29 @@ class Menu extends Component {
   render() {
     console.log();
     return (
-      <div>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">Main Dish</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              {this.props.menu.mainDishes.map((detalis) => {
-                return (
-                  <Cart
-                    key={detalis.id}
-                    detalis={detalis}
-                    changeInCart={this.props.changeInCart}
-                    sendData={this.sendData}
-                    chosenItem={this.chosenItem}
-                  />
-                );
-              })}
-            </tr>
-          </tbody>
-        </table>
+      <div className="rest-menu">
+        <div className="row">
+          <div className="col-md-4 col-xs-12">
+            <p>Main Dish</p>
+          </div>
+          <div className="col-md-4 col-xs-12">
+            <p> Price</p>{" "}
+          </div>
+          <div className="col-md-4 col-xs-12">
+            <p> Cart</p>{" "}
+          </div>
+          {this.props.menu.mainDishes.map((detalis) => {
+            return (
+              <Cart
+                key={detalis.id}
+                detalis={detalis}
+                changeInCart={this.props.changeInCart}
+                sendData={this.sendData}
+                chosenItem={this.chosenItem}
+              />
+            );
+          })}
+        </div>
         <hr></hr>
         {console.log(this.props.menu.mainDishes)}
         <p>The chosen Item {this.props.item}</p>

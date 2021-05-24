@@ -7,21 +7,19 @@ import { addToCart, add_to_cart } from "./Redux/CountActions";
 
 const Cart = (props) => {
   return (
-    <div className="Cart">
-      <tr>
-        <td>{props.detalis.dishname}</td>
-        <td>{props.detalis.price}</td>{" "}
-        <td>
-          <i
-            style={{ cursor: "pointer" }}
-            className="fas fa-cart-plus"
-            onClick={() => {
-              props.chosenItem(props.detalis);
-              props.addToCart(props.detalis);
-            }}
-          ></i>
-        </td>
-      </tr>
+    <div className="row">
+      <div className="col-md-4">{props.detalis.dishname}</div>
+      <div className="col-md-4">{props.detalis.price}</div>
+      <div className="col-md-4">
+        <i
+          style={{ cursor: "pointer" }}
+          className="fas fa-cart-plus"
+          onClick={() => {
+            props.chosenItem(props.detalis);
+            props.addToCart(props.detalis.dishname);
+          }}
+        ></i>
+      </div>
     </div>
   );
 };
