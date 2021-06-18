@@ -29,6 +29,11 @@ export const add_to_cart = (payload) => {
     dispatch(addToCart(payload));
   };
 };
+export const IncreaseItem = () => {
+  return (dispatch) => {
+    dispatch(Increment());
+  };
+};
 
 export const menuRequest = () => {
   return {

@@ -15,8 +15,8 @@ const Cart = (props) => {
           style={{ cursor: "pointer" }}
           className="fas fa-cart-plus"
           onClick={() => {
-            props.chosenItem(props.detalis);
-            props.addToCart(props.detalis.dishname);
+            props.chosenItem(props.detalis.dishname);
+            props.addToCart(props.detalis);
           }}
         ></i>
       </div>

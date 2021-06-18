@@ -2,9 +2,6 @@ import {
   RES_MENU_REQUEST,
   RES_MENU_LOADED,
   RES_MENU_FAILURE,
-  // INCREASE_COUNT,
-  // DECREASE_COUNT,
-  // DELETE_COUNT,
 } from "./ActionTypes";
 const initialState = {
   loading: true,

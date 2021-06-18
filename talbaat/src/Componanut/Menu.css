@@ -1,0 +1,15 @@
+.chosen-item {
+  margin-bottom: 2vw;
+}
+.chosen-item i {
+  font-size: 2vw;
+  color: #000;
+}
+.chosen-item i:hover {
+  color: #0d6efd;
+}
+.chosen-item span {
+  color: #fff;
+  padding: 0.4vw 0.5vw;
+  margin: 1vw;
+}

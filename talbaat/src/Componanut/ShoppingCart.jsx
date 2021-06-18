@@ -1,33 +1,55 @@
 import React from "react";
 import { connect } from "react-redux";
+import { IncreaseItem } from "./Redux/CountActions";
 
 function ShoppingCart(props) {
-  //   const getClasses = () => {
-  //     return menu.count == 0
-  //       ? "badge bg-warning text-dark m-2"
-  //       : "badge bg-primary m-2";
-  //   };
-  console.log(props.details);
-  return (
-    <h3>Ji</h3>
+  const getClasses = () => {
+    return props.item.count == 0
+      ? "bg bg-warning text-dark m-2"
+      : "bg bg-primary m-2";
+  };
 
-    // <div className="container">
-    //   <div className="row">
-    //     <div className="col-2">
-    //       <span>Main Dish </span>
-    //     </div>
-    //     <div className="col-2">
-    //       <span>Price </span>
-    //     </div>
-    //     <div className="col">
-    //       <span className={getClasses()}>{menu.count}</span>
-    //       <button className="btn btn-primary btn-sm">+</button>
-    //       <span style={{ cursor: "pointer" }}>
-    //         <i className="fas fa-trash m-2"></i>
-    //       </span>
-    //     </div>
-    //   </div>
-    // </div>
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-3">
+          <span>Main Dish </span>
+        </div>
+        <div className="col-3">
+          <span>Price </span>
+        </div>
+        <div className="col-3">
+          {" "}
+          <span>Count </span>
+        </div>
+        <div className="row">
+          {props.item.map((oneItem) => {
+            return (
+              <div className="row">
+                {" "}
+                <div className="col-3">{oneItem.name}</div>{" "}
+                <div className="col-3">{oneItem.price}</div>{" "}
+                <div className="col-3">{oneItem.count}</div>{" "}
+                <div className="col-3">
+                  {" "}
+                  <span className={getClasses()}></span>
+                  <button
+                    className="btn btn-primary btn-sm"
+                    onClick={props.increment}
+                  >
+                    +
+                  </button>
+                  {console.log(oneItem)}
+                  <span style={{ cursor: "pointer" }}>
+                    <i className="fas fa-trash m-2"></i>
+                  </span>
+                </div>{" "}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 }
 const mapStateToProps = (state) => {
@@ -35,5 +57,10 @@ const mapStateToProps = (state) => {
     item: state.shopping,
   };
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    increment: () => dispatch(IncreaseItem()),
+  };
+};
 
-export default connect(mapStateToProps)(ShoppingCart);
+export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCart);

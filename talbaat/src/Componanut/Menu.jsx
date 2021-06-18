@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Cart from "./Cart";
 import axios from "axios";
 import { connect } from "react-redux";
+import "./Menu.css";
+import { Link } from "react-router-dom";
 
 class Menu extends Component {
   state = {};
@@ -47,14 +49,23 @@ class Menu extends Component {
           })}
         </div>
         <hr></hr>
-        {console.log(this.props.menu.mainDishes)}
+        {/* {console.log(this.props.menu.mainDishes)}
         <p>The chosen Item {this.props.item}</p>
-        {console.log(this.props.item)}
+        {console.log(this.props.item)} */}
+        <div className="chosen-item text-center">
+          <Link to="/Cart">
+            {" "}
+            <i className="fas fa-shopping-cart"></i>
+          </Link>
+          <span className="bg bg-primary">{this.props.item.length}</span>
+        </div>
       </div>
     );
   }
 }
 const mapStateToProps = (state) => {
+  // console.log(state.shopping[0].id);
+
   return {
     item: state.shopping,
   };
