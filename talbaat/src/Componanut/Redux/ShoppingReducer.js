@@ -1,4 +1,9 @@
-import { ADD_TO_CART, INCREASE_COUNT } from "./ActionTypes";
+import {
+  ADD_TO_CART,
+  DECREASE_COUNT,
+  DELETE_ITEM,
+  INCREASE_COUNT,
+} from "./ActionTypes";
 
 const initialState = [];
 
@@ -6,24 +11,19 @@ const ShoppingReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
       const newstate = [...state];
-      const third = newstate.filter((e) => e.id === action.payload.id);
-      console.log(third.length);
-      if (newstate.length > 0 && third.length > 0) {
-        const item = newstate.find((item) => {
-          if (item.id === third[0].id) return item;
-        });
-        let incre = (item.count += 1);
-        console.log(incre);
-        const newIncreState = [...newstate];
-        newIncreState.map((item) => {
+      if (
+        newstate.length > 0 &&
+        newstate.filter((e) => e.id === action.payload.id).length > 0
+      ) {
+        newstate.map((item) => {
           if (item.id === action.payload.id) {
-            item.count = incre;
+            item.count += 1;
             return item;
           } else {
             return item;
           }
         });
-        return newIncreState;
+        return newstate;
       } else {
         const newState = [
           ...newstate,
@@ -38,9 +38,30 @@ const ShoppingReducer = (state = initialState, action) => {
       }
 
     case INCREASE_COUNT:
-      let StateTwo = [...state];
-      StateTwo = state.map((e) => e.id);
-      return StateTwo;
+      let newState = [...state];
+      newState.map((e) => {
+        if (e.id === action.payload.id) {
+          e.count += 1;
+          return e;
+        }
+      });
+      return newState;
+
+    case DECREASE_COUNT:
+      let decreaseState = [...state];
+      decreaseState.map((e) => {
+        if (e.id === action.payload.id && e.count > 0) {
+          e.count -= 1;
+          return e;
+        }
+      });
+      return decreaseState;
+
+    case DELETE_ITEM:
+      const filteredState = [...state];
+      const filtered = filteredState.filter((e) => e.id !== action.payload.id);
+      console.log(filteredState);
+      return filtered;
 
     default:
       return state;

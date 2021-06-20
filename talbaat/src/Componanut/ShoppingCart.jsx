@@ -1,12 +1,20 @@
 import React from "react";
 import { connect } from "react-redux";
-import { IncreaseItem } from "./Redux/CountActions";
+import { deleteItem, decreaseItem, IncreaseItem } from "./Redux/CountActions";
 
 function ShoppingCart(props) {
   const getClasses = () => {
     return props.item.count == 0
       ? "bg bg-warning text-dark m-2"
       : "bg bg-primary m-2";
+  };
+  const countItem = () => {
+    const num = props.item.map((e) => {
+      const num = e.count;
+      return num;
+    });
+    const finalNum = num.reduce((a, b) => a + b, 0);
+    return finalNum;
   };
 
   return (
@@ -35,12 +43,20 @@ function ShoppingCart(props) {
                   <span className={getClasses()}></span>
                   <button
                     className="btn btn-primary btn-sm"
-                    onClick={props.increment}
+                    onClick={() => props.increment(oneItem)}
                   >
                     +
                   </button>
-                  {console.log(oneItem)}
-                  <span style={{ cursor: "pointer" }}>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={() => props.decrement(oneItem)}
+                  >
+                    -
+                  </button>
+                  <span
+                    style={{ cursor: "pointer" }}
+                    onClick={() => props.delete(oneItem)}
+                  >
                     <i className="fas fa-trash m-2"></i>
                   </span>
                 </div>{" "}
@@ -48,6 +64,10 @@ function ShoppingCart(props) {
             );
           })}
         </div>
+      </div>
+      <div className="chosen-item text-center">
+        <i className="fas fa-shopping-cart"></i>
+        <span className="bg bg-primary">{countItem()}</span>
       </div>
     </div>
   );
@@ -59,7 +79,9 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    increment: () => dispatch(IncreaseItem()),
+    increment: (e) => dispatch(IncreaseItem(e)),
+    decrement: (e) => dispatch(decreaseItem(e)),
+    delete: (e) => dispatch(deleteItem(e)),
   };
 };
 

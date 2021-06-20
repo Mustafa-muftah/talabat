@@ -49,9 +49,7 @@ class Menu extends Component {
           })}
         </div>
         <hr></hr>
-        {/* {console.log(this.props.menu.mainDishes)}
-        <p>The chosen Item {this.props.item}</p>
-        {console.log(this.props.item)} */}
+
         <div className="chosen-item text-center">
           <Link to="/Cart">
             {" "}
@@ -64,8 +62,6 @@ class Menu extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  // console.log(state.shopping[0].id);
-
   return {
     item: state.shopping,
   };

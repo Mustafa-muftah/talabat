@@ -1,11 +1,12 @@
 import {
   INCREASE_COUNT,
-  // DECREASE_COUNT,
   // DELETE_COUNT,
   ADD_TO_CART,
   RES_MENU_REQUEST,
   RES_MENU_LOADED,
   RES_MENU_FAILURE,
+  DECREASE_COUNT,
+  DELETE_ITEM,
 } from "./ActionTypes";
 import axios from "axios";
 
@@ -29,9 +30,20 @@ export const add_to_cart = (payload) => {
     dispatch(addToCart(payload));
   };
 };
-export const IncreaseItem = () => {
+export const IncreaseItem = (payload) => {
   return (dispatch) => {
-    dispatch(Increment());
+    dispatch(Increment(payload));
+  };
+};
+export const decreaseItem = (payload) => {
+  return (dispatch) => {
+    dispatch(decrement(payload));
+  };
+};
+
+export const deleteItem = (payload) => {
+  return (dispatch) => {
+    dispatch(Delete(payload));
   };
 };
 
@@ -60,9 +72,22 @@ export const addToCart = (payload) => {
     payload: payload,
   };
 };
-export const Increment = () => {
+export const Increment = (e) => {
   return {
     type: INCREASE_COUNT,
+    payload: e,
+  };
+};
+export const decrement = (e) => {
+  return {
+    type: DECREASE_COUNT,
+    payload: e,
+  };
+};
+export const Delete = (e) => {
+  return {
+    type: DELETE_ITEM,
+    payload: e,
   };
 };
 
