@@ -10,6 +10,7 @@ import Search from "./Componanut/Search";
 import RestPagination from "./Componanut/RestPagination";
 import ShoppingCart from "./Componanut/ShoppingCart";
 import Cart from "./Componanut/Cart";
+import CheckOut from "./CheckOut";
 
 class App extends Component {
   state = {
@@ -60,7 +61,7 @@ class App extends Component {
           ></Route>
           <Route
             path="/Check-Out"
-            render={(props) => <ShoppingCart {...props} />}
+            render={(props) => <CheckOut {...props} />}
           ></Route>
 
           <Route exact path="/">

@@ -30,6 +30,9 @@ function ShoppingCart(props) {
     const TotalPrice = price.reduce((a, b) => a + b, 0);
     return TotalPrice;
   };
+  // const NaviToCHeck = () => {
+  //   props.history.push("/Check-Out");
+  // };
 
   console.log(state);
   return (
@@ -81,10 +84,12 @@ function ShoppingCart(props) {
         </div>
       </div>
       <div className="chosen-item text-center">
-        <Link to="/Check-Out" onClick={() => setstate(true)}>
-          <i className="fas fa-shopping-cart"></i>
-          <span className="bg bg-primary">{countItem()}</span>
-        </Link>
+        <div onClick={() => setstate(true)}>
+          <Link to="/Check-Out">
+            <i className="fas fa-shopping-cart"></i>
+            <span className="bg bg-primary">{countItem()}</span>
+          </Link>
+        </div>
       </div>
       {state ? (
         <div className="total-price text-center">
