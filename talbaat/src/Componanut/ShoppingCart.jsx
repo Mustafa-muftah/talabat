@@ -20,19 +20,10 @@ function ShoppingCart(props) {
     const finalNum = num.reduce((a, b) => a + b, 0);
     return finalNum;
   };
-  const totalPrice = () => {
-    const price = props.item.map((e) => {
-      const itemPrice = Number(e.price);
-      const itemNum = e.count;
-      const price = itemPrice * itemNum;
-      return price;
-    });
-    const TotalPrice = price.reduce((a, b) => a + b, 0);
-    return TotalPrice;
+
+  const NaviToCHeck = () => {
+    props.history.push("/Check-Out");
   };
-  // const NaviToCHeck = () => {
-  //   props.history.push("/Check-Out");
-  // };
 
   console.log(state);
   return (
@@ -84,23 +75,11 @@ function ShoppingCart(props) {
         </div>
       </div>
       <div className="chosen-item text-center">
-        <div onClick={() => setstate(true)}>
-          <Link to="/Check-Out">
-            <i className="fas fa-shopping-cart"></i>
-            <span className="bg bg-primary">{countItem()}</span>
-          </Link>
-        </div>
+        <Link to="/Check-Out">
+          <i className="fas fa-shopping-cart"></i>
+          <span className="bg bg-primary">{countItem()}</span>
+        </Link>
       </div>
-      {state ? (
-        <div className="total-price text-center">
-          <span>
-            {" "}
-            Total Price = <span className="bg ">{`${totalPrice()} $`}</span>
-          </span>
-        </div>
-      ) : (
-        ""
-      )}
     </div>
   );
 }
