@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { deleteItem, decreaseItem, IncreaseItem } from "./Redux/CountActions";
+import { Link } from "react-router-dom";
+import "./ShoppingCart.css";
 
 function ShoppingCart(props) {
+  let [state, setstate] = useState(false);
+
   const getClasses = () => {
     return props.item.count == 0
       ? "bg bg-warning text-dark m-2"
@@ -16,7 +20,18 @@ function ShoppingCart(props) {
     const finalNum = num.reduce((a, b) => a + b, 0);
     return finalNum;
   };
+  const totalPrice = () => {
+    const price = props.item.map((e) => {
+      const itemPrice = Number(e.price);
+      const itemNum = e.count;
+      const price = itemPrice * itemNum;
+      return price;
+    });
+    const TotalPrice = price.reduce((a, b) => a + b, 0);
+    return TotalPrice;
+  };
 
+  console.log(state);
   return (
     <div className="container">
       <div className="row">
@@ -66,9 +81,21 @@ function ShoppingCart(props) {
         </div>
       </div>
       <div className="chosen-item text-center">
-        <i className="fas fa-shopping-cart"></i>
-        <span className="bg bg-primary">{countItem()}</span>
+        <Link to="/Check-Out" onClick={() => setstate(true)}>
+          <i className="fas fa-shopping-cart"></i>
+          <span className="bg bg-primary">{countItem()}</span>
+        </Link>
       </div>
+      {state ? (
+        <div className="total-price text-center">
+          <span>
+            {" "}
+            Total Price = <span className="bg ">{`${totalPrice()} $`}</span>
+          </span>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

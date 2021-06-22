@@ -58,6 +58,10 @@ class App extends Component {
             path="/cart"
             render={(props) => <ShoppingCart {...props} />}
           ></Route>
+          <Route
+            path="/Check-Out"
+            render={(props) => <ShoppingCart {...props} />}
+          ></Route>
 
           <Route exact path="/">
             <Redirect to="/Home"></Redirect>

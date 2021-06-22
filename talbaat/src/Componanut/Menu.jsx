@@ -51,6 +51,7 @@ class Menu extends Component {
         <hr></hr>
 
         <div className="chosen-item text-center">
+          <h3>Choosen the item</h3>
           <Link to="/Cart">
             {" "}
             <i className="fas fa-shopping-cart"></i>
