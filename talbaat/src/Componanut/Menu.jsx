@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 class Menu extends Component {
   state = {};
 
-  chosenItem = (item) => {
-    console.log(item);
-  };
-
   sendData = () => {
     // let customerOrder = {
     //   id: this.props.menu.id,
@@ -26,14 +22,26 @@ class Menu extends Component {
     console.log();
     return (
       <div className="rest-menu">
+        <div className="chosen-item text-center">
+          <div className="heading">
+            <h3>Select Items</h3>
+          </div>
+          <div className="cartItems">
+            <Link to="/Cart">
+              {" "}
+              <i className="fas fa-shopping-cart"></i>
+            </Link>
+            <span className="bg bg-primary">{this.props.item.length}</span>
+          </div>
+        </div>
         <div className="row">
-          <div className="col-md-4 col-xs-12">
+          <div className="col-4">
             <p>Main Dish</p>
           </div>
-          <div className="col-md-4 col-xs-12">
+          <div className="col-4">
             <p> Price</p>{" "}
           </div>
-          <div className="col-md-4 col-xs-12">
+          <div className="col-4">
             <p> Cart</p>{" "}
           </div>
           {this.props.menu.mainDishes.map((detalis) => {
@@ -43,20 +51,9 @@ class Menu extends Component {
                 detalis={detalis}
                 changeInCart={this.props.changeInCart}
                 sendData={this.sendData}
-                chosenItem={this.chosenItem}
               />
             );
           })}
-        </div>
-        <hr></hr>
-
-        <div className="chosen-item text-center">
-          <h3>Choosen the item</h3>
-          <Link to="/Cart">
-            {" "}
-            <i className="fas fa-shopping-cart"></i>
-          </Link>
-          <span className="bg bg-primary">{this.props.item.length}</span>
         </div>
       </div>
     );

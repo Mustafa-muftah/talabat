@@ -3,6 +3,7 @@ import axios from "axios";
 import Rstaruant from "./Restaruant";
 import { Route, useLocation, Link } from "react-router-dom";
 import queryString from "query-string";
+import "./Resturant.css";
 
 class RestPagination extends Component {
   state = {
@@ -51,13 +52,13 @@ class RestPagination extends Component {
     return (
       <div className="restList row">
         <div className="row">
-          <div className="col m-3 ">
+          <div className="Rest col m-3 ">
             <h3>Restraunat</h3>
           </div>
-          <div className="col m-3 ">
+          <div className="Rest col m-3 ">
             <h3>Cusisines</h3>
           </div>
-          <div className="col m-3 ">
+          <div className="Rest col m-3 ">
             <h3>Area</h3>
           </div>
         </div>

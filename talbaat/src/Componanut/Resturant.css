@@ -1,0 +1,24 @@
+.restList {
+  width: 90vw;
+  max-width: 92.5vw;
+  margin: 4vw auto;
+  background-color: rgba(241, 241, 241, 1);
+}
+.Rest {
+  font-size: 2vw;
+  color: orangered;
+  font-weight: 600;
+  text-align: center;
+}
+.restrender {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.restrender a {
+  text-decoration: none;
+}
+.restrender a:hover {
+  color: orangered;
+}

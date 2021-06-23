@@ -11,6 +11,7 @@ import RestPagination from "./Componanut/RestPagination";
 import ShoppingCart from "./Componanut/ShoppingCart";
 import Cart from "./Componanut/Cart";
 import CheckOut from "./CheckOut";
+import "./App.css";
 
 class App extends Component {
   state = {

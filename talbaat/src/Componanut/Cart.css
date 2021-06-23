@@ -2,3 +2,11 @@
   border-right: 0.1vw solid black;
   background-color: blue;
 }
+.item {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+i {
+  font-size: 2vw;
+  padding: 0 0vw 0 4vw;
+}

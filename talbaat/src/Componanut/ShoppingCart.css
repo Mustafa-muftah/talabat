@@ -1,3 +1,61 @@
 /* .total-price {
   display: none;
 } */
+.shopping {
+  width: 90vw;
+  max-width: 92.5vw;
+  margin: 4vw auto;
+  background-color: rgba(241, 241, 241, 1);
+}
+.shopping .row {
+  justify-content: space-between;
+}
+.shopping .heading {
+  font-size: 2vw;
+  color: orangered;
+  font-weight: 600;
+  text-align: center;
+}
+.oneItem {
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  padding: 1vw 0;
+}
+.trash {
+  padding: 0;
+}
+.lastPrice {
+  color: white;
+  padding: 0.6vw;
+  border-radius: 1vw;
+}
+.total-price {
+  text-align: center;
+  font-size: 2vw;
+  padding: 0 0 2vw 0;
+}
+.chosed {
+  padding: 1vw 0;
+}
+.chosed a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 600;
+  background-color: #0d6efd;
+  padding: 1vw;
+  border-radius: 5px;
+}
+.chosed a i {
+  padding: 0;
+}
+.count {
+  padding: 0.6vw;
+  border-radius: 0.4vw;
+  color: #fff;
+}

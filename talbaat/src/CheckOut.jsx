@@ -31,17 +31,16 @@ class CheckOut extends Component {
       <div>
         <ShoppingCart />
         {this.state ? (
-          <div className="total-price text-center">
+          <div className="total-price ">
             <span>
               {" "}
               Total Price ={" "}
-              <span className="bg ">{`${this.totalPrice()} $`}</span>
+              <span className="bg bg-primary lastPrice ">{`${this.totalPrice()} $`}</span>
             </span>
           </div>
         ) : (
           ""
         )}
-        )
       </div>
     );
   }

@@ -6,16 +6,19 @@ import ShoppingReducer from "./Redux/ShoppingReducer";
 import { addToCart, add_to_cart } from "./Redux/CountActions";
 
 const Cart = (props) => {
+  const chosenItem = (item) => {
+    console.log(item);
+  };
   return (
     <div className="row">
-      <div className="col-md-4">{props.detalis.dishname}</div>
-      <div className="col-md-4">{props.detalis.price}</div>
-      <div className="col-md-4">
+      <div className="col-4 item">{props.detalis.dishname}</div>
+      <div className="col-4 item">{props.detalis.price}</div>
+      <div className="col-4 item">
         <i
           style={{ cursor: "pointer" }}
-          className="fas fa-cart-plus"
+          className="fas fa-cart-plus cartItem"
           onClick={() => {
-            props.chosenItem(props.detalis.dishname);
+            chosenItem();
             props.addToCart(props.detalis);
           }}
         ></i>

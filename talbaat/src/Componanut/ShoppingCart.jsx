@@ -27,37 +27,41 @@ function ShoppingCart(props) {
 
   console.log(state);
   return (
-    <div className="container">
+    <div className="container shopping">
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 heading">
           <span>Main Dish </span>
         </div>
-        <div className="col-3">
+        <div className="col-3 heading">
           <span>Price </span>
         </div>
-        <div className="col-3">
+        <div className="col-3 heading">
           {" "}
           <span>Count </span>
+        </div>
+        <div className="col-3 heading">
+          {" "}
+          <span> </span>
         </div>
         <div className="row">
           {props.item.map((oneItem) => {
             return (
               <div className="row">
                 {" "}
-                <div className="col-3">{oneItem.name}</div>{" "}
-                <div className="col-3">{oneItem.price}</div>{" "}
-                <div className="col-3">{oneItem.count}</div>{" "}
-                <div className="col-3">
+                <div className="col-3 oneItem">{oneItem.name}</div>{" "}
+                <div className="col-3 oneItem">{oneItem.price}</div>{" "}
+                <div className="col-3 oneItem">{oneItem.count}</div>{" "}
+                <div className="col-3 oneItem">
                   {" "}
                   <span className={getClasses()}></span>
                   <button
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary btn-sm mx-1"
                     onClick={() => props.increment(oneItem)}
                   >
                     +
                   </button>
                   <button
-                    className="btn btn-danger btn-sm"
+                    className="btn btn-danger btn-sm mx-1"
                     onClick={() => props.decrement(oneItem)}
                   >
                     -
@@ -66,7 +70,7 @@ function ShoppingCart(props) {
                     style={{ cursor: "pointer" }}
                     onClick={() => props.delete(oneItem)}
                   >
-                    <i className="fas fa-trash m-2"></i>
+                    <i className="fas fa-trash trash mx-1"></i>
                   </span>
                 </div>{" "}
               </div>
@@ -74,10 +78,11 @@ function ShoppingCart(props) {
           })}
         </div>
       </div>
-      <div className="chosen-item text-center">
-        <Link to="/Check-Out">
-          <i className="fas fa-shopping-cart"></i>
-          <span className="bg bg-primary">{countItem()}</span>
+      <div className="chosed text-center">
+        <i className="fas fa-shopping-cart mx-1"></i>
+        <span className="bg bg-primary count mx-1">{countItem()}</span>
+        <Link className="mx-1" to="/Check-Out">
+          Confirm
         </Link>
       </div>
     </div>
