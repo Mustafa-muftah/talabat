@@ -55,3 +55,61 @@ input:active {
 .search-button:hover {
   color: black;
 }
+
+.searchAFilter {
+  width: 90vw;
+  max-width: 92.5vw;
+  margin: 4vw auto;
+  background-color: rgba(241, 241, 241, 1);
+  padding: 0vw 0 15vw 0;
+}
+.input-container {
+  display: flex;
+  padding: 3vw 0;
+  width: 60%;
+  margin: auto;
+}
+.input-container input {
+  width: 50vw;
+  line-height: 3;
+  border: 1px solid #cfcfcf;
+}
+.input-container input::placeholder {
+  padding: 0 3vw;
+}
+.input-container select {
+  width: 14%;
+}
+.searchbtn {
+  background: orangered;
+  width: 2.7vw;
+  font-size: 1.25vw;
+  border: 0.144vw solid orangered;
+  padding: 9px 4vw 0 1vw;
+  border-radius: 7px;
+}
+.searchbtn a i {
+  color: #fff;
+}
+.List {
+  background: #fff;
+  width: 54vw;
+  height: auto;
+  margin: -3vw auto;
+  padding: 1vw 1vw;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.List a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  font-weight: 600;
+  transition: all ease-in-out 0.25s;
+}
+.List a:hover {
+  background-color: orangered;
+  color: #fff;
+  text-shadow: 1px 1px #333;
+}

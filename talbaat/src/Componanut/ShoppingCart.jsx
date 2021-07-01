@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { deleteItem, decreaseItem, IncreaseItem } from "./Redux/CountActions";
+import {
+  deleteItem,
+  decreaseItem,
+  IncreaseItem,
+  total_price,
+} from "./Redux/CountActions";
 import { Link } from "react-router-dom";
 import "./ShoppingCart.css";
 
 function ShoppingCart(props) {
   let [state, setstate] = useState(false);
 
-  const getClasses = () => {
-    return props.item.count == 0
-      ? "bg bg-warning text-dark m-2"
-      : "bg bg-primary m-2";
-  };
   const countItem = () => {
     const num = props.item.map((e) => {
       const num = e.count;
@@ -21,11 +21,6 @@ function ShoppingCart(props) {
     return finalNum;
   };
 
-  const NaviToCHeck = () => {
-    props.history.push("/Check-Out");
-  };
-
-  console.log(state);
   return (
     <div className="container shopping">
       <div className="row">
@@ -53,7 +48,6 @@ function ShoppingCart(props) {
                 <div className="col-3 oneItem">{oneItem.count}</div>{" "}
                 <div className="col-3 oneItem">
                   {" "}
-                  <span className={getClasses()}></span>
                   <button
                     className="btn btn-primary btn-sm mx-1"
                     onClick={() => props.increment(oneItem)}
@@ -63,11 +57,14 @@ function ShoppingCart(props) {
                   <button
                     className="btn btn-danger btn-sm mx-1"
                     onClick={() => props.decrement(oneItem)}
+                    style={{ display: oneItem.count === 0 ? "none" : "block" }}
                   >
                     -
                   </button>
                   <span
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                    }}
                     onClick={() => props.delete(oneItem)}
                   >
                     <i className="fas fa-trash trash mx-1"></i>
@@ -81,7 +78,11 @@ function ShoppingCart(props) {
       <div className="chosed text-center">
         <i className="fas fa-shopping-cart mx-1"></i>
         <span className="bg bg-primary count mx-1">{countItem()}</span>
-        <Link className="mx-1" to="/Check-Out">
+        <Link
+          className="mx-1"
+          to="/Check-Out"
+          onClick={() => props.totalPrice(props.item)}
+        >
           Confirm
         </Link>
       </div>
@@ -98,6 +99,7 @@ const mapDispatchToProps = (dispatch) => {
     increment: (e) => dispatch(IncreaseItem(e)),
     decrement: (e) => dispatch(decreaseItem(e)),
     delete: (e) => dispatch(deleteItem(e)),
+    totalPrice: (e) => dispatch(total_price(e)),
   };
 };
 

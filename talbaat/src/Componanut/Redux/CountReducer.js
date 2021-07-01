@@ -34,21 +34,6 @@ const Reducer = (state = initialState, action) => {
 
     default:
       return state;
-    //   case INCREASE_COUNT:
-    //   return {
-    //     ...state,
-    //     count: state.count + 1,
-    //   };
-    // case DECREASE_COUNT:
-    //   return {
-    //     ...state,
-    //     count: state.count - 1,
-    //   };
-    // case DELETE_COUNT:
-    //   return {
-    //     ...state,
-    //     count: (state.count = 0),
-    //   };
   }
 };
 export default Reducer;

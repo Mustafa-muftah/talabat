@@ -12,6 +12,7 @@ import ShoppingCart from "./Componanut/ShoppingCart";
 import Cart from "./Componanut/Cart";
 import CheckOut from "./CheckOut";
 import "./App.css";
+import SearchAndFilter from "./Componanut/SearchFilter";
 
 class App extends Component {
   state = {
@@ -63,6 +64,16 @@ class App extends Component {
           <Route
             path="/Check-Out"
             render={(props) => <CheckOut {...props} />}
+          ></Route>
+          <Route
+            path="/Search-And-Filter"
+            render={(props) => (
+              <SearchAndFilter
+                menu={this.state.menus}
+                resturant={this.state.resturant}
+                {...props}
+              />
+            )}
           ></Route>
 
           <Route exact path="/">

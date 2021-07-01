@@ -7,6 +7,8 @@ import {
   RES_MENU_FAILURE,
   DECREASE_COUNT,
   DELETE_ITEM,
+  REMOVE_FROM_CART,
+  TOTAL_PRICE,
 } from "./ActionTypes";
 import axios from "axios";
 
@@ -91,13 +93,28 @@ export const Delete = (e) => {
   };
 };
 
-// const Decrement = () => {
-//   return {
-//     type: DECREASE_COUNT,
-//   };
-// };
-// const Delete = () => {
-//   return {
-//     type: DELETE_COUNT,
-//   };
-// };
+export const remove = (payload) => {
+  return {
+    type: REMOVE_FROM_CART,
+    payload: payload,
+  };
+};
+
+export const removeFormCart = (payload) => {
+  return (dispatch) => {
+    dispatch(remove(payload));
+  };
+};
+
+export const totalprice = (e) => {
+  return {
+    type: TOTAL_PRICE,
+    payload: e,
+  };
+};
+
+export const total_price = (payload) => {
+  return (dispatch) => {
+    dispatch(totalprice(payload));
+  };
+};

@@ -45,7 +45,12 @@ class Navbar extends Component {
                   العربيه
                 </NavLink>
               </li>
-              <li className="nav-item  mx-5">
+              <li className="nav-item  mx-5 searchbtn">
+                <NavLink to="Search-And-Filter">
+                  <i aria-hidden="true" className="fa fa-search"></i>
+                </NavLink>
+              </li>
+              <li className="nav-item  mx-4 ">
                 <NavLink className="nav-link" to="/">
                   <img
                     src="https://www.talabat.com/images/talabat/flag-eg.png"
@@ -54,9 +59,11 @@ class Navbar extends Component {
                   ></img>
                 </NavLink>
               </li>
-              <NavLink to="/login">
-                <button className="btn nav-btn">Login</button>
-              </NavLink>
+              <li className="nav-item  mx-2">
+                <NavLink to="/login">
+                  <button className="btn nav-btn">Login</button>
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

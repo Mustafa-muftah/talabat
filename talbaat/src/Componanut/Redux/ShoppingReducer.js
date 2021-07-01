@@ -3,6 +3,7 @@ import {
   DECREASE_COUNT,
   DELETE_ITEM,
   INCREASE_COUNT,
+  TOTAL_PRICE,
 } from "./ActionTypes";
 
 const initialState = [];
@@ -15,15 +16,8 @@ const ShoppingReducer = (state = initialState, action) => {
         newstate.length > 0 &&
         newstate.filter((e) => e.id === action.payload.id).length > 0
       ) {
-        newstate.map((item) => {
-          if (item.id === action.payload.id) {
-            item.count += 1;
-            return item;
-          } else {
-            return item;
-          }
-        });
-        return newstate;
+        const stateNew = newstate.filter((e) => e.id !== action.payload.id);
+        return stateNew;
       } else {
         const newState = [
           ...newstate,
@@ -31,7 +25,7 @@ const ShoppingReducer = (state = initialState, action) => {
             id: action.payload.id,
             name: action.payload.dishname,
             price: action.payload.price,
-            count: 0,
+            count: 1,
           },
         ];
         return newState;
@@ -55,6 +49,7 @@ const ShoppingReducer = (state = initialState, action) => {
           return e;
         }
       });
+
       return decreaseState;
 
     case DELETE_ITEM:

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Cart.css";
 import { connect } from "react-redux";
@@ -6,19 +6,18 @@ import ShoppingReducer from "./Redux/ShoppingReducer";
 import { addToCart, add_to_cart } from "./Redux/CountActions";
 
 const Cart = (props) => {
-  const chosenItem = (item) => {
-    console.log(item);
-  };
+  const [state, setState] = useState(false);
+
   return (
     <div className="row">
       <div className="col-4 item">{props.detalis.dishname}</div>
       <div className="col-4 item">{props.detalis.price}</div>
       <div className="col-4 item">
         <i
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", color: state ? "blue" : "black" }}
           className="fas fa-cart-plus cartItem"
           onClick={() => {
-            chosenItem();
+            setState(!state);
             props.addToCart(props.detalis);
           }}
         ></i>
