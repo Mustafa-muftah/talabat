@@ -1,111 +1,111 @@
 {
     "Restaruant" : [
-      { "id": "R-1", "name": "Ozone", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-2", "name": "Zawy", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-3", "name": "Oozy", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-4", "name": "Italiano", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-5", "name": "Roma", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-6", "name": "Shabrawy", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-7", "name": "Gad", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-8", "name": "Wings", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-9", "name": "Bahia", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-10", "name": "KFC", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-11", "name": "Mac", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-12", "name": "Momen", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-13", "name": "Zacks", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-14", "name": "Mana", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-15", "name": "Home", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-16", "name": "Dana", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-17", "name": "Gigi", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-18", "name": "Door", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-19", "name": "Hana", "cusisines": "italian", "area": "NasrCity" },
-      { "id": "R-20", "name": "Arabica", "cusisines": "italian", "area": "NasrCity" }
+      { "id": "R-1", "name": "Ozone", "cusisines": "Egyptian", "area": "NasrCity" },
+      { "id": "R-2", "name": "Zawy", "cusisines": "Italian", "area": "Misr El Gdeda" },
+      { "id": "R-3", "name": "Oozy", "cusisines": "Egyptian", "area": "NasrCity" },
+      { "id": "R-4", "name": "Italiano", "cusisines": "Italian", "area": "NasrCity" },
+      { "id": "R-5", "name": "Roma", "cusisines": "Italian", "area": "NasrCity" },
+      { "id": "R-6", "name": "Shabrawy", "cusisines": "American", "area": "NasrCity" },
+      { "id": "R-7", "name": "Gad", "cusisines": "Egyptian", "area": "NasrCity" },
+      { "id": "R-8", "name": "Wings", "cusisines": "Syrian", "area": "Misr El Gdeda" },
+      { "id": "R-9", "name": "Bahia", "cusisines": "American", "area": "Maadi" },
+      { "id": "R-10", "name": "KFC", "cusisines": "Italian", "area": "NasrCity" },
+      { "id": "R-11", "name": "Mac", "cusisines": "American", "area": "Maadi" },
+      { "id": "R-12", "name": "Momen", "cusisines": "Italian", "area": "NasrCity" },
+      { "id": "R-13", "name": "Zacks", "cusisines": "Syrian", "area": "Maadi" },
+      { "id": "R-14", "name": "Mana", "cusisines": "Italian", "area": "Misr El Gdeda" },
+      { "id": "R-15", "name": "Home", "cusisines": "American", "area": "NasrCity" },
+      { "id": "R-16", "name": "Dana", "cusisines": "Italian", "area": "NasrCity" },
+      { "id": "R-17", "name": "Gigi", "cusisines": "Syrian", "area": "Maadi" },
+      { "id": "R-18", "name": "Door", "cusisines": "American", "area": "Misr El Gdeda" },
+      { "id": "R-19", "name": "Hana", "cusisines": "Syrian", "area": "Maadi" },
+      { "id": "R-20", "name": "Arabica", "cusisines": "Italian", "area": "NasrCity" }
     ],
  
     "menus":[
     
       {
         "id": "R-1",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " fish" ,"price" : " 90" ,"count": "0"},  {"id" : "M-2" , "dishname" : " sea fruits" ,"price" : " 60","count": "0"},  {"id" : "M-3" , "dishname" : " shrimps" ,"price" : " 100" ,"count": "0"}]
       },
       {
         "id": "R-2",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " pizza" ,"price" : " 60" ,"count": "0"},  {"id" : "M-2" , "dishname" : " laznia" ,"price" : " 50","count": "0"},  {"id" : "M-3" , "dishname" : " pasta" ,"price" : " 90" ,"count": "0"}]
         
       },
       {
         "id": "R-3",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 50" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 80","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 90" ,"count": "0"}]
       },
       {
         "id": "R-4",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " sea fruits" ,"price" : " 80" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 90","count": "0"},  {"id" : "M-3" , "dishname" : " shrimps" ,"price" : " 90" ,"count": "0"}]
        
       },
       {
         "id": "R-5",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 100" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 30","count": "0"},  {"id" : "M-3" , "dishname" : " pizza" ,"price" : " 80" ,"count": "0"}]
         
       },
       {
         "id": "R-6",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 40" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 60","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 70" ,"count": "0"}]
       },
       {
         "id": "R-7",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 70" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 60","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 60" ,"count": "0"}]
       },
       {
         "id": "R-8",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 30" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 90","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 90" ,"count": "0"}]
       },
       {
         "id": "R-9",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " pasta" ,"price" : " 70" ,"count": "0"},  {"id" : "M-2" , "dishname" : " pizza" ,"price" : " 60","count": "0"},  {"id" : "M-3" , "dishname" : " Laznia" ,"price" : " 80" ,"count": "0"}]
       },
       {
         "id": "R-10",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 90" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 80","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 80" ,"count": "0"}]
       },
       {
         "id": "R-11",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 100" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 120","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 50" ,"count": "0"}]
       },
       {
         "id": "R-12",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 110" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 50","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
       },
       {
         "id": "R-13",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 70" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 70","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 70" ,"count": "0"}]
       },
       {
         "id": "R-14",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 50" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 80","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 80" ,"count": "0"}]
       },
       {
         "id": "R-15",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 70" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 120","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
       },
       {
         "id": "R-16",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 80" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 60","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 50" ,"count": "0"}]
       },
       {
         "id": "R-17",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 50" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 40","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
       },
       {
         "id": "R-18",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " grilled meat" ,"price" : " 40" ,"count": "0"},  {"id" : "M-2" , "dishname" : " sandwiches" ,"price" : " 80","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 100" ,"count": "0"}]
       },
       {
         "id": "R-19",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 90" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fried chicken" ,"price" : " 40","count": "0"},  {"id" : "M-3" , "dishname" : " sandwiches" ,"price" : " 30" ,"count": "0"}]
       },
       {
         "id": "R-20",
-        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 10" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fish" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " meat" ,"price" : " 30" ,"count": "0"}]
+        "mainDishes":[ {"id" : "M-1" , "dishname" : " chicken" ,"price" : " 40" ,"count": "0"},  {"id" : "M-2" , "dishname" : " fried chicken" ,"price" : " 20","count": "0"},  {"id" : "M-3" , "dishname" : " sandwiches" ,"price" : " 30" ,"count": "0"}]
       }
     ]
 }

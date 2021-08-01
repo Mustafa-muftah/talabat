@@ -16,7 +16,11 @@ const ShoppingReducer = (state = initialState, action) => {
         newstate.length > 0 &&
         newstate.filter((e) => e.id === action.payload.id).length > 0
       ) {
-        const stateNew = newstate.filter((e) => e.id !== action.payload.id);
+        const stateNew = newstate.map((e) => {
+          e.count += 1;
+          return e;
+        });
+
         return stateNew;
       } else {
         const newState = [
@@ -25,7 +29,7 @@ const ShoppingReducer = (state = initialState, action) => {
             id: action.payload.id,
             name: action.payload.dishname,
             price: action.payload.price,
-            count: 1,
+            count: 0,
           },
         ];
         return newState;

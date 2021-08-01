@@ -18,6 +18,15 @@ class Menu extends Component {
     // axios.post("http://localhost:3005/menus", customerOrder);
     console.log("click");
   };
+  countItem = () => {
+    const num = this.props.item.map((e) => {
+      const num = e.count;
+      return num;
+    });
+    const finalNum = num.reduce((a, b) => a + b, 0);
+    return finalNum;
+  };
+
   render() {
     console.log();
     return (
@@ -31,7 +40,7 @@ class Menu extends Component {
               {" "}
               <i className="fas fa-shopping-cart"></i>
             </Link>
-            <span className="bg bg-primary">{this.props.item.length}</span>
+            <span className="bg bg-primary">{this.countItem()}</span>
           </div>
         </div>
         <div className="row">

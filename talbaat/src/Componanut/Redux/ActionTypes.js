@@ -7,3 +7,7 @@ export const DELETE_ITEM = "  DELETE_ITEM";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 export const TOTAL_PRICE = "TOTAL_PRICE";
+export const FILTER_BY_PRICE = "FILTER_BY_PRICE";
+export const FILTER_BY_CUSIENS = "FILTER_BY_CUSIENS";
+export const FILTER_BY_LOCATION = "FILTER_BY_LOCATION";
+export const SEARCH_FOR_ITEM = "SEARCH_FOR_ITEM";

@@ -46,7 +46,7 @@ class Navbar extends Component {
                 </NavLink>
               </li>
               <li className="nav-item  mx-5 searchbtn">
-                <NavLink to="Search-And-Filter">
+                <NavLink to="/SearchAndFilter">
                   <i aria-hidden="true" className="fa fa-search"></i>
                 </NavLink>
               </li>

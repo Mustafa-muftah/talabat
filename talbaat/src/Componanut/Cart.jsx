@@ -14,10 +14,9 @@ const Cart = (props) => {
       <div className="col-4 item">{props.detalis.price}</div>
       <div className="col-4 item">
         <i
-          style={{ cursor: "pointer", color: state ? "blue" : "black" }}
+          style={{ cursor: "pointer" }}
           className="fas fa-cart-plus cartItem"
           onClick={() => {
-            setState(!state);
             props.addToCart(props.detalis);
           }}
         ></i>

@@ -60,13 +60,12 @@ input:active {
   width: 90vw;
   max-width: 92.5vw;
   margin: 4vw auto;
-  background-color: rgba(241, 241, 241, 1);
   padding: 0vw 0 15vw 0;
 }
 .input-container {
   display: flex;
   padding: 3vw 0;
-  width: 60%;
+  width: 40%;
   margin: auto;
 }
 .input-container input {
@@ -93,12 +92,14 @@ input:active {
 }
 .List {
   background: #fff;
-  width: 54vw;
+  width: 36vw;
   height: auto;
   margin: -3vw auto;
   padding: 1vw 1vw;
   max-height: 50vh;
   overflow-y: scroll;
+  position: relative;
+  top: -25vw;
 }
 .List a {
   color: #000;
@@ -112,4 +113,49 @@ input:active {
   background-color: orangered;
   color: #fff;
   text-shadow: 1px 1px #333;
+}
+.filterContainer {
+  position: relative;
+  top: -8vw;
+  width: 20%;
+  border: 1px solid #ddd;
+  padding: 2vw;
+}
+.price-span {
+  font-size: 1.5vw;
+}
+.price-input {
+  width: 25%;
+  border: 1px solid #ddd;
+  padding: 0.2vw;
+}
+.price-btn {
+  margin-left: 1vw;
+  padding: 0.2vw;
+  background: orangered;
+  border: 1px solid orangered;
+}
+.head-line {
+  display: block;
+  font-size: 2vw;
+  font-weight: 600;
+  color: orangered;
+  border-bottom: 1px solid #ddd;
+}
+.Cusinie-sec {
+  padding: 1vw 0;
+  border-bottom: 1px solid #ddd;
+}
+.cusine-span {
+  font-size: 1.5vw;
+}
+.area-sec {
+  padding: 1vw 0;
+}
+.area-span {
+  font-size: 1.5vw;
+}
+.price-sec {
+  padding: 1vw 0;
+  border-bottom: 1px solid #ddd;
 }

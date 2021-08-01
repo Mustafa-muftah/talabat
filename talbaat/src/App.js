@@ -66,14 +66,9 @@ class App extends Component {
             render={(props) => <CheckOut {...props} />}
           ></Route>
           <Route
-            path="/Search-And-Filter"
-            render={(props) => (
-              <SearchAndFilter
-                menu={this.state.menus}
-                resturant={this.state.resturant}
-                {...props}
-              />
-            )}
+            exact
+            path="/SearchAndFilter"
+            render={(props) => <SearchAndFilter {...props} />}
           ></Route>
 
           <Route exact path="/">
